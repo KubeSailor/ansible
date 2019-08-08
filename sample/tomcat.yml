@@ -1,0 +1,13 @@
+---
+- hosts: slave
+  become: yes
+  tasks: 
+  - name: tomcat
+    apt:
+      name: tomcat8
+      update_cache: yes
+      state: present
+  - name: service
+    service:
+      name: tomcat8
+      state: restarted
