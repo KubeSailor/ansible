@@ -1,0 +1,7 @@
+---
+# handlers file for nginx
+
+- name: service
+  service: 
+    name: nginx
+    state: started
