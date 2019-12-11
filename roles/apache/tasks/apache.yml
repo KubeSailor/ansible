@@ -1,0 +1,7 @@
+---
+- name: apache installation
+  apt:
+    name: tomcat8
+    update_cache: yes
+    state: present
+
